@@ -1,0 +1,21 @@
+ForegroundColour = 131, 148, 150
+CursorColour =    133, 153,    0
+
+BackgroundColour= #05021C
+
+Black =           #6272A4
+BoldBlack =       #21222C
+Red =             #FF6E6E
+BoldRed =         #FF5555
+Green =           #69FF94
+BoldGreen =       #50FA7B
+Yellow =          #FFFFA5
+BoldYellow =      #F1FA8C
+Blue =            #D6ACFF
+BoldBlue =        #F1FA8C
+Magenta =         #FF00FF
+BoldMagenta =     #8B008B
+Cyan =            #A4FFFF
+BoldCyan =        #8BE9FD
+White =           #FFFFFF
+BoldWhite =       #F8F8F2

@@ -1,0 +1,21 @@
+# To use common configuration in %APPDATA%\mintty, simply remove this file
+CursorType=line
+CursorBlinks=no
+Font=Delugia Nerd Font
+FontHeight=13
+Term=xterm-256color
+BellType=0
+ThemeFile=MSterminal.minttyrc
+CtrlShiftShortcuts=yes
+PgUpDnScroll=yes
+Scrollbar=none
+ScrollbackLines=100000
+BoldAsFont=-1
+FontWeight=400
+FontIsBold=no
+RightClickAction=menu
+BellFlash=no
+
+
+
+
