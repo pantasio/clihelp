@@ -1,0 +1,56 @@
+---------------------
+# Open Vimwiki
+	nvim /mnt/d/cli-help/index.wiki
+	%% this is default vimwiki
+
+	todo:
+		run command "vimwiki" to open default vimwiki
+
+# Create new topic
+	Example we create main topic
+
+	%% [Example create vimwiki](example/create) Use Git in project
+%%					|					|				|
+%%					|					|				|_____ this is description of topic
+%%					|					|
+%%					|					|_____ create.wiki file will create in example folder
+%%					|
+%%					|_____ title of topic
+%%
+
+= Content of Vimwiki =
+
+	[vimwiki-todo-lists](todo-list) - Create todo list
+
+	[vimwiki-table](table) - Create table
+
+	[vimwiki-diary](diary) - Create diary
+
+== Search ==
+
+Use :VWS /term/ to search.
+
+Use :lopen to see all results
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
