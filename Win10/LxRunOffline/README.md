@@ -25,6 +25,9 @@ i   Install distro
 
 $ LxRunOffline r -n ubuntuAlpha
 
+## Restart WSL
+
+$ Get-Service LxssManager | Restart-Service
 
 ## Run normal user in WSL
 

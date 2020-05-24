@@ -1,3 +1,24 @@
+# Fisher is a package manager for the fish shell.
+
+$ curl https://git.io/fisher --create-dirs -sLo ~/.config/fish/functions/fisher.fish
+
+## Add theme bobthefish
+
+fisher add oh-my-fish/theme-bobthefish
+
+## 
+
+
+
+
+
+
+
+
+
+
+
+
 <!--  this is some usefull commend.
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 

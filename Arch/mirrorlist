@@ -1,0 +1,39 @@
+##
+## Arch Linux repository mirrorlist
+## Generated on 2020-05-24
+##
+
+
+## Vietnam
+Server = http://f.archlinuxvn.org/archlinux/$repo/os/$arch
+
+## Singapore
+Server = http://mirror.0x.sg/archlinux/$repo/os/$arch
+Server = https://mirror.0x.sg/archlinux/$repo/os/$arch
+Server = http://mirror.aktkn.sg/archlinux/$repo/os/$arch
+Server = https://mirror.aktkn.sg/archlinux/$repo/os/$arch
+Server = https://download.nus.edu.sg/mirror/archlinux/$repo/os/$arch
+Server = https://sgp.mirror.pkgbuild.com/$repo/os/$arch
+Server = http://mirror.nus.edu.sg/archlinux/$repo/os/$arch
+
+## Hong Kong
+Server = http://mirror-hk.koddos.net/archlinux/$repo/os/$arch
+Server = https://mirror-hk.koddos.net/archlinux/$repo/os/$arch
+Server = http://hkg.mirror.rackspace.com/archlinux/$repo/os/$arch
+Server = https://hkg.mirror.rackspace.com/archlinux/$repo/os/$arch
+Server = https://arch-mirror.wtako.net/$repo/os/$arch
+Server = http://mirror.xtom.com.hk/archlinux/$repo/os/$arch
+Server = https://mirror.xtom.com.hk/archlinux/$repo/os/$arch
+
+## Japan
+Server = http://mirrors.cat.net/archlinux/$repo/os/$arch
+Server = https://mirrors.cat.net/archlinux/$repo/os/$arch
+Server = http://ftp.tsukuba.wide.ad.jp/Linux/archlinux/$repo/os/$arch
+Server = http://ftp.jaist.ac.jp/pub/Linux/ArchLinux/$repo/os/$arch
+Server = https://ftp.jaist.ac.jp/pub/Linux/ArchLinux/$repo/os/$arch
+Server = https://jpn.mirror.pkgbuild.com/$repo/os/$arch
+
+## Philippines
+Server = http://mirror.rise.ph/archlinux/$repo/os/$arch
+
+

@@ -1,0 +1,28 @@
+== video https://www.youtube.com/watch?v=tcd4txbTtAY ==
+
+
+git add -A   OR   git add --all		là staged tất cả các file gồm cả file tracked và Untracked.
+
+git add -A subfolder	OR git add subfolder	Chỉ staged tất cả các file bên trong subfolder.
+
+git add --no-all subfolder		chỉ staged tất cả các file trong subfolder mà không staged các file đã xóa trong subfolder.
+
+git add -u		OR git add --update			Chỉ staged các file đã tracked
+
+git add -u subfolder		chỉ staged các file đã tracked trong subfolder
+
+IF we add wrong file, run
+	$ git reset
+
+
+
+
+
+
+
+
+
+
+
+
+

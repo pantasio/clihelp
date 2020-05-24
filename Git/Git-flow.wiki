@@ -1,0 +1,29 @@
+git flow init -d
+
+git push origin --all
+
+git flow feature start <name-of-feature>
+
+git push --set-upstream origin feature/<name-of-feature>
+
+when you testing feature is right
+
+git flow feature finish   -- merge feature into develop branch
+
+git push --set-upstream origin develop
+
+git flow release start 1.0.1
+
+git add -A
+
+git commit -a
+
+git flow release finish
+
+git checkout master
+
+git push origin --all --follow-tags
+
+
+
+
