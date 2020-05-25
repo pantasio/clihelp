@@ -4,7 +4,7 @@ $ gpg --refresh-keys
 $ pacman-key --init && pacman-key --populate archlinux
 
 # edit mirrorlist
-$ cp /mnt/d/cli-help/Arch/mirrorlist  /etc/pacman.d/mirrorlist
+$ sudo cp /mnt/d/cli-help/Arch/mirrorlist  /etc/pacman.d/mirrorlist
 
 # fix error invalid or corrupted package (PGP signature)
 
@@ -18,14 +18,11 @@ locale-gen
 # Install git
 $ pacman -S git fish neovim wget tmux
 
-# Install git flow
-$ wget -q  https://raw.githubusercontent.com/petervanderdoes/gitflow-avh/develop/contrib/gitflow-installer.sh && sudo bash gitflow-installer.sh install stable; rm gitflow-installer.sh
-
-# Create new user
+# Create new user 
 
 sed 's/# %wheel ALL=(ALL) NOPASSWD: ALL/%wheel ALL=(ALL) NOPASSWD: ALL/g' /etc/sudoers > /etc/sudoers.new
 
-sed 's/# %wheel ALL=(ALL)/%wheel ALL=(ALL) NOPASSWD: ALL/g' /etc/sudoers > /etc/sudoers.new
+sed 's/# %wheel ALL=(ALL)/%wheel ALL=(ALL)/g' /etc/sudoers > /etc/sudoers.new
 export EDITOR="cp /etc/sudoers.new"
 visudo
 rm /etc/sudoers.new
@@ -36,6 +33,9 @@ passwd bungbu
 
 # restart WSL
 $ Get-Service LxssManager | Restart-Service
+
+# Install git flow
+$ wget -q  https://raw.githubusercontent.com/petervanderdoes/gitflow-avh/develop/contrib/gitflow-installer.sh && sudo bash gitflow-installer.sh install stable; rm gitflow-installer.sh
 
 
 # install Fisher

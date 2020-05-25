@@ -13,7 +13,7 @@ mkdir ~/.config/nvim/vim-plug
 touch ~/.config/nvim/vim-plug/plugins.vim
 
 
-Open Nvim and run :PlugUpdate 
+Open Nvim and run :PlugUpdate
 
 
 step2
@@ -33,6 +33,10 @@ touch ~/.config/nvim/keys/mappings.vim
 ----------------------------------------------
 Neovim - Setting Up VSCode Intellisense with CoC [LSP] https://www.youtube.com/watch?v=OXEVhnY621M
 https://www.chrisatmachine.com/Neovim/04-vim-coc/
+
+# Install latest nodejs
+curl --fail -LSs https://install-node.now.sh/latest | sudo sh
+export PATH="/usr/local/bin/:$PATH"
 
 # for neovim
 mkdir -p ~/.local/share/nvim/site/pack/coc/start
@@ -57,17 +61,59 @@ sudo npm install -g neovim
 ----------------------------------------------
 Readmore: https://dev.to/hymanzhan/setting-up-wsl-2-for-web-development-3202
 
-As you might have noticed, I use miniconda and nvm for managing Python and node/npm versions. You can install them simply by running:
 
-# miniconda
+Install python3
+-----
+## miniconda is tool manage python package and version
 
 wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
 
+Run in bash:
 sh ./Miniconda3-latest-Linux-x86_64.sh
-
 conda install python=3.8
 
-copy and paste 
+
+Install NodeJS
+-----
+# nvm is tool manage version
+
+wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
+
+# and add the nvm-related scripts to your .zshrc
+
+nvm install --lts
+
+After install python3 and NodeJS
+-----
+IF ERROR IN FISHSHELL WE MUST PORT TO init.fish
+
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/home/bungbu/miniconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/home/bungbu/miniconda3/etc/profile.d/conda.sh" ]; then
+        . "/home/bungbu/miniconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/home/bungbu/miniconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
+# >>> NVM init config >>>
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+# This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \.
+"$NVM_DIR/bash_completion"  # This loads nvm
+bash_completion
+# <<< NVM init config <<<
+
+
+copy and paste
 ----------------------------------------------
 Getting Copy / Paste to Work in WSL with tmux and Terminal Vim
 https://www.youtube.com/watch?v=_MgrjgQqDcE
