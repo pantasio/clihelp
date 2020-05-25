@@ -4,7 +4,7 @@ $ gpg --refresh-keys
 $ pacman-key --init && pacman-key --populate archlinux
 
 # edit mirrorlist
-$ nano /etc/pacman.d/mirrorlist
+$ cp /mnt/d/cli-help/Arch/mirrorlist  /etc/pacman.d/mirrorlist
 
 # fix error invalid or corrupted package (PGP signature)
 
