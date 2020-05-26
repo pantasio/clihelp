@@ -1,24 +1,109 @@
 Setup Neovim like an IDE - www.youtube.com/watch?v=65Wq4fjREUU
 
-step1
+step1 FINISH
 ----------------------------------------------
 Neovim - Installing Plugins with Vim-Plug - https://www.youtube.com/watch?v=QB9V__3VO2s
 ----------------------------------------------
 
 https://www.chrisatmachine.com/Neovim/01-vim-plug/
 
-mkdir ~/.config/nvim
-touch ~/.config/nvim/init.vim
-curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-mkdir ~/.config/nvim/vim-plug
+mkdir -p ~/dotfiles/.config/nvim
+cd dotfiles
+git flow init -d
 
-touch ~/.config/nvim/vim-plug/plugins.vim
+touch ~/dotfiles/.config/nvim/init.vim
+ln -s ~/dotfiles/.config/nvim/init.vim ~/.config/nvim/init.vim
 
+
+curl -fLo ~/dotfiles/.config/nvim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+mkdir -p ~/.config/nvim/autoload
+ln -s ~/dotfiles/.config/nvim/autoload/plug.vim ~/.config/nvim/autoload/plug.vim
+
+mkdir -p ~/dotfiles/.config/nvim/vim-plug
+touch ~/dotfiles/.config/nvim/vim-plug/plugins.vim
+mkdir -p ~/.config/nvim/vim-plug
+ln -s ~/dotfiles/.config/nvim/vim-plug/plugins.vim ~/.config/nvim/vim-plug/plugins.vim
 
 Open Nvim and run :PlugUpdate
 
+step2 NOT FINISH
+----------------------------------------------
+ ~/.config/nvim/general/settings.vimNeovim Setting up the basics 
+https://www.chrisatmachine.com/Neovim/02-vim-general-settings/
 
-step2
+mkdir -p ~/dotfiles/.config/nvim/general
+mkdir -p ~/.config/nvim/general
+
+touch ~/dotfiles/.config/nvim/general/settings.vim
+ln -s ~/dotfiles/.config/nvim/general/settings.vim ~/.config/nvim/general/settings.vim
+
+
+mkdir -p ~/.config/nvim/keys
+mkdir -p ~/dotfiles/.config/nvim/keys
+
+touch ~/dotfiles/.config/nvim/keys/mappings.vim
+ln -s ~/dotfiles/.config/nvim/keys/mappings.vim ~/.config/nvim/keys/mappings.vim
+
+# Add into init.vim
+source $HOME/.config/nvim/general/settings.vim
+source $HOME/.config/nvim/keys/mappings.vim
+
+
+
+----------------------------------------------
+copy and paste  - the most inportant
+----------------------------------------------
+Getting Copy / Paste to Work in WSL with tmux and Terminal Vim
+www.youtube.com/watch?v=_MgrjgQqDcE
+
+- tmux-yank: https://github.com/tmux-plugins/tmux-yank
+- VcXsrv: https://sourceforge.net/projects/vcxsrv/
+- Dotfiles: https://github.com/nickjj/dotfiles
+
+  First config tmux-plugins/tpm
+    git clone https://github.com/tmux-plugins/tpm ~/.config/tmux/plugins/tpm
+
+  Add tmux-plugins/tmux-yank
+    mkdir -p ~/dotfiles/.config/tmux/
+    touch ~/dotfiles/.config/tmux/.tmux.conf
+    ln -s ~/dotfiles/.config/tmux/.tmux.conf ~/.tmux.conf
+
+    Add contend to the bottom of .tmux.conf:
+
+# Let Tmux Plugin Manager plugin at bottom of config file
+# edit
+
+#########################################################
+
+# Tmux Plugin Manager
+
+
+# List of plugins
+set -g @plugin 'tmux-plugins/tpm'
+set -g @plugin 'tmux-plugins/tmux-sensible'
+set -g @plugin 'tmux-plugins/tmux-resurrect'
+set -g @plugin 'tmux-plugins/tmux-continuum'
+set -g @plugin 'tmux-plugins/tmux-yank'
+
+# Other examples:
+# set -g @plugin 'github_username/plugin_name'
+# set -g @plugin 'git@github.com/user/plugin'
+# set -g @plugin 'git@bitbucket.com/user/plugin'
+
+
+# Initialize TMUX plugin manager (keep this line at the very bottom of tmux.conf)
+run -b '~/.config/tmux/plugins/tpm/tpm'
+
+########################################################      
+
+  Install tmp plugins:
+    tmux source-file ~/.tmux.conf
+    ctrl+a shift+i
+
+
+
+
+step3
 ----------------------------------------------
 Essential Settings for Neovim https://www.youtube.com/watch?v=gZCXaF-Lmco
 ----------------------------------------------
@@ -120,17 +205,6 @@ install package for Neovim
 -----
 npm install -g neovim
 
-
-
-----------------------------------------------
-copy and paste
-----------------------------------------------
-Getting Copy / Paste to Work in WSL with tmux and Terminal Vim
-https://www.youtube.com/watch?v=_MgrjgQqDcE
-
-- tmux-yank: https://github.com/tmux-plugins/tmux-yank
-- VcXsrv: https://sourceforge.net/projects/vcxsrv/
-- Dotfiles: https://github.com/nickjj/dotfiles
 
 
 

@@ -4,6 +4,21 @@ After update .tmux.conf
 Update config:
 tmux source-file ~/.tmux.conf
 
+# In Tmux fresh install
+after config in .tmux.conf we run tmp to fetch any plugins
+Ctr+a shift+i
+
+# Copy and paste in Tmux
+  press your pre-fix ( ctrl + a  ) ; release a still hold ctrl
+  use your mouse to selete text
+  Ctrl+shift+c to copy to clipboard
+  Ctrl+shift+v to paste into nvim
+
+
+
+
+
+
 <bind-key> Control + a 
 
 v split-window -h
