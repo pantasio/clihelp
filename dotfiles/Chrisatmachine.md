@@ -3,6 +3,8 @@ Setup Neovim like an IDE - www.youtube.com/watch?v=65Wq4fjREUU
 step1
 ----------------------------------------------
 Neovim - Installing Plugins with Vim-Plug - https://www.youtube.com/watch?v=QB9V__3VO2s
+----------------------------------------------
+
 https://www.chrisatmachine.com/Neovim/01-vim-plug/
 
 mkdir ~/.config/nvim
@@ -19,6 +21,7 @@ Open Nvim and run :PlugUpdate
 step2
 ----------------------------------------------
 Essential Settings for Neovim https://www.youtube.com/watch?v=gZCXaF-Lmco
+----------------------------------------------
 https://www.chrisatmachine.com/Neovim/02-vim-general-settings/
 
 mkdir ~/.config/nvim/general
@@ -32,6 +35,7 @@ touch ~/.config/nvim/keys/mappings.vim
 
 ----------------------------------------------
 Neovim - Setting Up VSCode Intellisense with CoC [LSP] https://www.youtube.com/watch?v=OXEVhnY621M
+----------------------------------------------
 https://www.chrisatmachine.com/Neovim/04-vim-coc/
 
 # Install latest nodejs
@@ -57,10 +61,10 @@ npm install coc-snippets --global-style --ignore-scripts --no-bin-links --no-pac
 sudo npm install -g neovim
 
 
-
+----------------------------------------------
+INSTALL PYTHON AND NODEJS
 ----------------------------------------------
 Readmore: https://dev.to/hymanzhan/setting-up-wsl-2-for-web-development-3202
-
 
 Install python3
 -----
@@ -71,7 +75,7 @@ wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
 Run in bash:
 sh ./Miniconda3-latest-Linux-x86_64.sh
 conda install python=3.8
-
+rm ~/Miniconda3-latest-Linux-x86_64.sh
 
 Install NodeJS
 -----
@@ -112,7 +116,13 @@ export NVM_DIR="$HOME/.nvm"
 bash_completion
 # <<< NVM init config <<<
 
+install package for Neovim
+-----
+npm install -g neovim
 
+
+
+----------------------------------------------
 copy and paste
 ----------------------------------------------
 Getting Copy / Paste to Work in WSL with tmux and Terminal Vim
@@ -124,14 +134,6 @@ https://www.youtube.com/watch?v=_MgrjgQqDcE
 
 
 
-
-# nvm
-
-wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
-
-# and add the nvm-related scripts to your .zshrc
-
-nvm install --lts
 
 
 

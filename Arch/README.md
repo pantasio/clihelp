@@ -54,6 +54,9 @@ git flow version    # 1.12.3 (AVH Edition)
 nvim --version      # NVIM v0.4.3
 fish --version      #fish, version 3.1.2
 tmux -V             # tmux 3.1b
+node v12.16.3 (npm v6.14.4)
+Node Version Manager (v0.35.3)
+Node.js v14.3.0
 
 
 # Clean System
