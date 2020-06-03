@@ -1,20 +1,20 @@
 # My personal wiki
 
-	[Vimwiki](Vimwiki/Vimwiki) - How to use vimkiki
+	[Vimwiki](Vimwiki) - How to use vimkiki
 
-	[Git](Git/Git) Use Git in project
+	[Git](Git) Use Git in project
 
-	[Docker](Docker/Docker) -
+	[Docker](Docker) -
 
-	[Fish](Fish/Fish) -
+	[Fish](Fish) -
 
-	[Ansible](Ansible/Ansible) -
+	[Ansible](Ansible) -
 
-	Chocolatey -
+	[Chocolatey](Chocolatey) -
 
-	Hugo -
+	[Hugo](Hugo) -
 
-	Nvim -
+	[Nvim](Nvim) -
 
 	Powershell -
 
@@ -26,4 +26,4 @@
 
 	Winserver -
 
-
+  

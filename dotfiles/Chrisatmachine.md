@@ -49,7 +49,6 @@ source $HOME/.config/nvim/general/settings.vim
 source $HOME/.config/nvim/keys/mappings.vim
 
 
-
 ----------------------------------------------
 copy and paste  - the most inportant
 ----------------------------------------------
@@ -99,6 +98,38 @@ run -b '~/.config/tmux/plugins/tpm/tpm'
   Install tmp plugins:
     tmux source-file ~/.tmux.conf
     ctrl+a shift+i
+
+
+
+
+
+Step3
+----------------------------------------------
+Tcomment and vimwiki 
+----------------------------------------------
+
+Install Tcomment
+  add plugin Plug 'tomtom/tcomment_vim'
+
+Setting keymap for Tcomment
+
+" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+" [,/] Toggle code comments.
+" " https://github.com/tomtom/tcomment_vim
+
+
+map <leader>/ :TComment<CR>
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -205,6 +236,23 @@ install package for Neovim
 -----
 npm install -g neovim
 
+
+step4 Neovim Intellisense with coc (NOT FINISH )
+----------------------------------------------
+More info:https://www.chrisatmachine.com/Neovim/04-vim-coc/
+
+
+mkdir ~/.config/nvim/plug-config
+mkdir ~/dotfiles/.config/nvim/plug-config
+
+touch ~/dotfiles/.config/nvim/plug-config/coc.vim
+ln -s ~/dotfiles/.config/nvim/plug-config/coc.vim ~/.config/nvim/plug-config/coc.vim
+
+Install extension and Configuration
+
+:CocInstall coc-json coc-python coc-snippets coc-vimlsp
+I dont install jet bc i dont know how to use 
+I will install when i write document
 
 
 

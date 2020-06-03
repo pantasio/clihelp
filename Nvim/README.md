@@ -1,5 +1,51 @@
-<!-- https://gist.github.com/subfuzion/7d00a6c919eeffaf6d3dbf9a4eb11d64       -->
+!-- https://gist.github.com/subfuzion/7d00a6c919eeffaf6d3dbf9a4eb11d64       -->
 <!-- https://kipalog.com/posts/Di-cu-tu-Sublime-Text-sang-VIM         -->
+# exit nvim
+ZZ ---------------  exit and save 
+ZQ ---------------  Force exit ( without save )
+
+# Moving around
+zt ---------------  set cursor at top of screen
+zz ---------------  set cursor at mid of screen
+zb ---------------  set cursor at bot of screen
+
+gg ---------------  goto begin of file
+G  ---------------  goto end of file
+
+$ ----------------  goto end of line
+0 (number 0) -----  goto begin of line
+
+# Delete
+D or d$ ---------- delete from cursor to the end of line
+
+
+daw
+diw
+da(
+di(
+dap
+
+# undo and redo
+
+u ----------------  undo 1 change
+ctrl+r -----------  redo 1 change
+
+U ----------------  undo all change
+ctrl+R -----------  redo all change
+
+:earlier 5m ------  go back to 5min ago
+:later 5m --------  go to 5min 
+
+# Search and replace
+  nnoremap S :%s//g<Left><Left>
+
+
+
+
+
+
+
+
 
 <leader> ở đây là , (dấu phẩy)
 
