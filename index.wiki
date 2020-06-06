@@ -16,14 +16,14 @@
 
 	[Nvim](Nvim) -
 
-	Powershell -
+	[Powershell](Powershell) -
 
-	SSH -
+	[SSH](SSH) -
 
-	Tmux -
+	[Tmux](Tmux) -
 
-	Vifm -
+	[Vifm](Vifm) -
 
-	Winserver -
+	[Winserver](Winserver) -
 
   

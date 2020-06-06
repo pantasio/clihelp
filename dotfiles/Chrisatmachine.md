@@ -1,4 +1,4 @@
-Setup Neovim like an IDE - www.youtube.com/watch?v=65Wq4fjREUU
+Setup Neovim like an IDE - www.youtube.com/watch?v=64Wq4fjREUU
 
 step1 FINISH
 ----------------------------------------------
@@ -281,6 +281,18 @@ Neovim - Code Faster with Snippets https://www.youtube.com/watch?v=ebrEY-6EwXI
 
 
 
+# Check version
+git --version
+fish --version
+nvim --version
+tmux -V
+node -v
+  #Use nmv to manage nodeJS
+  npm --version
+python --version
+  # use miniconda to manage python
+  conda -V
+  
 
 #git dotfiles
 
